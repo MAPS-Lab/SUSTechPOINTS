@@ -15,6 +15,7 @@ Instructions on setting up file transfer can be found [here](https://docs.google
 2. transfer to the server `/home/user/`
 3. run the following commands
 ```bash
+cd /home/user 
 xargs -I % --arg-file=seq_XX.txt cp /mnt/12T/public/shangqi/lidar_full/kitti_format/lidar/% /seq_XX/
 zip -r seq_XX.zip seq_XX
 ```
