@@ -21,6 +21,8 @@ or by right clicking an object and clicking `edit multiple instances`. Here, you
 
 **NOTE:** the tool relies on existing boxes to label unannotated frames, so it will preform better if the obj is labelled in a few frames. You can copy a bounding box and paste it in another frame. To ensure that the box size is the same, you can select `sync size to all` (3). 
 
+**NOTE2:** If an object has very few points/ambiguous throughout the entire sequence, you can ignore it. 
+
 ## Installation
 
 [Docker](./doc/docker.md)
