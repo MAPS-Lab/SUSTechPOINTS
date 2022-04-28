@@ -2,8 +2,17 @@
 This is the tool we will be using for annotating data. 
 
 ### Downloading bin files 
-- Instructions on setting up file transfer can be found [here](https://docs.google.com/document/d/10QmpV0-8-sQTcIEvfgU8UzU3qZ8N_S5xbMDKM9frzfI/edit#). 
-- The point clouds are located in `/mnt/12T/public/shangqi/lidar_full/kitti_format/lidar` on the server. to get all the files for a sequence, you can do the following (perhaps theres a more efficient way, but here's how I did it). 
+- Instructions on setting up file transfer can be found [here](https://docs.google.com/document/d/10QmpV0-8-sQTcIEvfgU8UzU3qZ8N_S5xbMDKM9frzfI/edit#). But in short:
+```bin
+ssh -L 4321:129.215.90.110:22 <DICE username>@ssh.inf.ed.ac.uk
+```
+then in another terminal 
+```bin
+scp -r -P 4321 <server username>@127.0.0.1:/file/on/the/server /local/directory
+```
+
+
+- The point clouds are located in `/mnt/12T/public/shangqi/data_0401/lidar/kitti_format/lidar` on the server. to get all the files for a sequence, you can do the following (perhaps theres a more efficient way, but here's how I did it). 
 
 1. Run the following commands
 
@@ -11,7 +20,7 @@ This is the tool we will be using for annotating data.
 cd /home/{user} 
 mkdir seq_XX
 cp /home/gabriel/seq_bin/seq_XX.txt /home/{user}
-xargs -I % --arg-file=seq_XX.txt cp /mnt/12T/public/shangqi/lidar_full/kitti_format/lidar/% /seq_XX/
+xargs -I % --arg-file=seq_XX.txt cp /mnt/12T/public/shangqi/data_0401/lidar/kitti_format/lidar/% seq_XX/
 zip -r seq_XX.zip seq_XX
 ```
 
