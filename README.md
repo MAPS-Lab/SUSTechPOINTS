@@ -19,8 +19,7 @@ scp -r -P 4321 <server username>@127.0.0.1:/file/on/the/server /local/directory
 ```bash
 cd /home/{user} 
 mkdir seq_XX
-cp /home/gabriel/seq_bin/seq_XX.txt /home/{user}
-xargs -I % --arg-file=seq_XX.txt cp /mnt/12T/public/shangqi/data_0401/lidar/kitti_format/lidar/% seq_XX/
+xargs -I % --arg-file=/home/gabriel/seq_bin/seq_XX.txt cp /mnt/12T/public/shangqi/data_0401/lidar/kitti_format/lidar/% /home/{user}/seq_XX/
 zip -r seq_XX.zip seq_XX
 ```
 
