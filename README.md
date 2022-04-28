@@ -1,7 +1,10 @@
 # SUSTechPOINTS: Point Cloud 3D Bounding Box Annotation Tool For Autonomous Driving
 This is the tool we will be using for annotating data. 
 
-### Downloading bin files 
+## Downloading bin files 
+
+**Method 1:**
+
 - Instructions on setting up file transfer can be found [here](https://docs.google.com/document/d/10QmpV0-8-sQTcIEvfgU8UzU3qZ8N_S5xbMDKM9frzfI/edit#). But in short:
 ```bin
 ssh -L 4321:129.215.90.110:22 <DICE username>@ssh.inf.ed.ac.uk
@@ -25,6 +28,9 @@ zip -r seq_XX.zip seq_XX
 
 where `seq_XX` is your assigned sequence, so `seq_00` for example, and `{user}` is your user directory. Running the above commands once should give you a zip folder containing all frames for one sequence. Repeat until you have all your sequences. Then transfer the zips back to your local machine.
 
+**Method 2**
+
+You can also download the separated sequence data directly on the server in ```/mnt/12T/public/labeling/seq_data```
 
 ## USING THE TOOL
 there is also a detailed explaination in the [chinese README](README_cn.md)
