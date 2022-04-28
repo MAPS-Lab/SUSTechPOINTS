@@ -31,6 +31,30 @@ or by right clicking an object and clicking `edit multiple instances`. Here, you
 
 [uwsgi](./doc/deploy_server.md)
 
+
+### FILE STRUCTURE
+
+`.bin` files should be inside a folder named lidar as illustrated below. You will have to create an empty `label` directory, this is where the `json` files for the labels are generated. 
+
+```bash
+.
+├── Docker
+├── __pycache__
+├── algos
+│   ├── __pycache__
+│   └── models
+├── calibpy
+├── data
+│   └── seq_XX
+│       ├── label <-- CREATE THIS FOLDER 
+│       └── lidar <-- FOLDER CONTAINING .bin FILES
+│       
+├── doc
+├── public
+└── tools
+```
+
+
 ## Operations
 
 [Operations](./doc/operations.md)
