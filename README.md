@@ -26,6 +26,8 @@ zip -r seq_XX.zip seq_XX
 where `seq_XX` is your assigned sequence, so `seq_00` for example, and `{user}` is your user directory. Running the above commands once should give you a zip folder containing all frames for one sequence. Repeat until you have all your sequences. Then transfer the zips back to your local machine.
 
 
+## USING THE TOOL
+there is also a detailed explaination in the [chinese README](README_cn.md)
 
 ### Main UI
 ![screenshot](./doc/main-ui.png)
