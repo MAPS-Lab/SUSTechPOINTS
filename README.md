@@ -2,26 +2,19 @@
 This is the tool we will be using for annotating data. 
 
 ### Downloading bin files 
-Instructions on setting up file transfer can be found [here](https://docs.google.com/document/d/10QmpV0-8-sQTcIEvfgU8UzU3qZ8N_S5xbMDKM9frzfI/edit#) The point clouds are located in `/mnt/12T/public/shangqi/lidar_full/kitti_format/lidar` on the server. to get all the files for a sequence, you can do the following (perhaps theres a more efficient way, but here's how I did it). 
+- Instructions on setting up file transfer can be found [here](https://docs.google.com/document/d/10QmpV0-8-sQTcIEvfgU8UzU3qZ8N_S5xbMDKM9frzfI/edit#). 
+- The point clouds are located in `/mnt/12T/public/shangqi/lidar_full/kitti_format/lidar` on the server. to get all the files for a sequence, you can do the following (perhaps theres a more efficient way, but here's how I did it). 
 
-1. make a `seq_XX.txt` file that looks like
+1. Run the following commands
+
 ```bash
-1643180344800.bin
-1643180344900.bin
-1643180345000.bin
-1643180345100.bin
-...
-```
-2. transfer to the server `/home/user/`
-3. run the following commands
-```bash
-cd /home/user 
+cd /home/{user} 
+cp /home/gabriel/seq_bin/seq_XX.txt /home/{user}
 xargs -I % --arg-file=seq_XX.txt cp /mnt/12T/public/shangqi/lidar_full/kitti_format/lidar/% /seq_XX/
 zip -r seq_XX.zip seq_XX
 ```
-4. you should now have a zip file containing all the bin files of the sequence. 
-5. Transfer zip from server to local.
 
+where `seq_XX` is your assigned sequence, so `seq_00` for example, and `{user}` is your user directory. Running the above commands once should give you a zip folder containing all frames for one sequence. Repeat until you have all your sequences. Then transfer the zips back to your local machine.
 
 
 
