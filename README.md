@@ -1,6 +1,8 @@
 # SUSTechPOINTS: Point Cloud 3D Bounding Box Annotation Tool For Autonomous Driving
 This is the tool we will be using for annotating data. 
 
+Please enter your name in the form [here](https://docs.google.com/spreadsheets/d/1nWl4c7pri89lWYz7OTJ2Zf3uB4y2v2eLUVsa5AzVjJk/edit?usp=sharing). So that we can make sure that all sequence will be labeled.
+
 ## Downloading bin files 
 
 **Method 1:**
