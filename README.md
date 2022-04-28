@@ -15,11 +15,13 @@ this tool also has semi-auto-annotation. Once you have drawn a bounding box for 
 
 ![batch-mode](./doc/auto-anno-car.gif)
 
-or by right clicking an object and clicking `edit multiple instances`.
+or by right clicking an object and clicking `edit multiple instances`. Here, you can use the auto annotation function to label the object throughout the entire sequence (1). Or you can select frames and selectively auto annotate. 
 
+![batch-mode](./doc/auto.png)
 
+**NOTE:** the tool relies on existing boxes to label unannotated frames, so it will preform better if the obj is labelled in a few frames. You can copy a bounding box and paste it in another frame. To ensure that the box size is the same, you can select `sync size to all` (3). 
 
-## Get started
+## Installation
 
 [Docker](./doc/docker.md)
 
@@ -31,6 +33,9 @@ or by right clicking an object and clicking `edit multiple instances`.
 
 [Operations](./doc/operations.md)
 [Shortcuts(中文)](./doc/shortcuts_cn.md)
+
+
+
 
 ## Cite
 
