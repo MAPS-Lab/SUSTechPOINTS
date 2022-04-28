@@ -9,6 +9,7 @@ This is the tool we will be using for annotating data.
 
 ```bash
 cd /home/{user} 
+mkdir seq_XX
 cp /home/gabriel/seq_bin/seq_XX.txt /home/{user}
 xargs -I % --arg-file=seq_XX.txt cp /mnt/12T/public/shangqi/lidar_full/kitti_format/lidar/% /seq_XX/
 zip -r seq_XX.zip seq_XX
