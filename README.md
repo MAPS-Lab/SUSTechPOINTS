@@ -34,6 +34,10 @@ where `seq_XX` is your assigned sequence, so `seq_00` for example, and `{user}` 
 
 You can also download the separated sequence data directly on the server in ```/mnt/12T/public/labeling/seq_data```
 
+**Method 3**
+
+If you don't have access to the lab server, you can also download the data [here](https://drive.google.com/drive/folders/1iSpwj1byRBL0W1Fn0_okv6CTYl94oIc5)
+
 ## USING THE TOOL
 there is also a detailed explaination in the [chinese README](README_cn.md)
 
